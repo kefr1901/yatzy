@@ -1,0 +1,39 @@
+ 
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    border: 1px solid black;
+
+}
+
+input {
+width: 150px;
+height:15px;
+background-color:white
+
+
+}
+
+td {
+    width:100px;
+    
+}
+
+.färgmörk{
+    width: 150px;
+    background-color: darkgrey
+}
+
+.grå{
+    background-color: lightgrey
+}
+
+* {
+padding:0px;
+
+}
+
+
+
+
+
