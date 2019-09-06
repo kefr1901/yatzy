@@ -1,36 +1,48 @@
- 
-table {
+body{
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    padding-left: 30px;
+    height: 200px;
+}
+
+
+
+table, td, tr {
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    border: 1px solid black;
+    border: 2px solid black;
 
 }
 
 input {
-width: 150px;
-height:15px;
-background-color:white
+    width: 30px;
+    height: 30px;
+    border: none;
+    margin: 0;
+    height: 100%;
+    text-align: center;
 
 
 }
 
 td {
-    width:100px;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
     
 }
 
 .färgmörk{
-    width: 150px;
-    background-color: darkgrey
+    margin: 0;
+    background-color: darkgrey;
 }
 
 .grå{
-    background-color: lightgrey
-}
-
-* {
-padding:0px;
-
+    background-color: lightgrey;
+    margin: 0;
 }
 
 
