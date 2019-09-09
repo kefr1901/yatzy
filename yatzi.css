@@ -4,6 +4,11 @@ body{
     width: 200px;
     padding-left: 30px;
     height: 200px;
+    animation-duration: 2s;
+    animation-name: slidein;
+    
+
+
 }
 
 
@@ -44,6 +49,37 @@ td {
     background-color: lightgrey;
     margin: 0;
 }
+
+h1{
+    animation-duration: 4s;
+    animation-name: slidein;
+    
+
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 200%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+
+ 
+  
+  .zoom:hover {
+    transform: scale(1.5);
+    background-color: green;
+    
+  }
+
+ 
+
 
 
 
