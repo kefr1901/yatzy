@@ -1,9 +1,41 @@
- 
-table {
+
+h2{
+    
+    animation-name: slidein;
+    animation-duration: 2s;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+}
+
+@keyframes slidein{
+from{
+color:red;
+font-size: 32px;
+widows: 10%;
+margin-left: 0%;
+margin-top:0%;
+}
+
+to{
+    color:blue;
+    font-size: 20px;
+    transform: rotate(180deg);
+    width:50%;
+    margin-left:30%;
+    margin-top:20%;
+}
+}
+
+table,tr,td {
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    border: 1px solid black;
+    border:1px solid black;
+    text-align: left;
 
+}
+
+table{
+      border: 2px solid black;
 }
 
 input {
@@ -16,12 +48,17 @@ background-color:white
 
 td {
     width:100px;
-    
+
+}
+
+.thead{
+  border:2px solid black;
 }
 
 .färgmörk{
     width: 150px;
-    background-color: darkgrey
+    background-color: darkgrey;
+
 }
 
 .grå{
@@ -32,8 +69,3 @@ td {
 padding:0px;
 
 }
-
-
-
-
-
