@@ -1,9 +1,7 @@
 body{
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    padding-left: 30px;
-    height: 200px;
+    margin-left:  50px;
+    margin-top:  20px;
+    background-color: whitesmoke;
 }
 
 h1{
@@ -20,8 +18,8 @@ table, td, tr {
 }
 
 input {
-    width: 30px;
-    height: 30px;
+    width: 60px;
+    height: 50px;
     border: none;
     margin: 0;
     height: 100%;
@@ -38,6 +36,9 @@ td {
     font-size: 12px;
     
 }
+#table{
+    float: left;
+}
 
 .färgmörk{
     margin: 0;
@@ -48,8 +49,54 @@ td {
     background-color: lightgrey;
     margin: 0;
 }
+li{
+    display: inline;
+    list-style-type: none;
+    padding: 15px;
+   
+}
 
+#table{
+    float: left;
+}
 
+#gameSpace{
+    float: right;
+    background-color: aliceblue;
+    
+}
 
+#dice { 
+    text-align: center;
+    font-weight: bold;
+    
+   
+}
 
+#dice li{
+   background-color: blanchedalmond;
+   margin: 5px;
+   border-radius: 10px;
+   box-shadow: 5px 5px 10px grey;
+   width: 50px;
+   display: inline-block;
+}
 
+#dice li:hover{
+    background: cadetblue;
+
+}
+#roll{
+    width: 100px;
+    height: 50px;
+    background-color: peru;
+    box-shadow: 5px 5px 10px grey;
+    display: inline-block;
+    line-height: 3;
+    vertical-align: middle;
+}
+#roll:hover{
+    border: 2px dotted black;
+    background-color: rosybrown;
+
+}
