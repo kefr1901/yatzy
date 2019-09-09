@@ -1,9 +1,8 @@
 body{
     margin: 0;
     padding: 0;
-    width: 200px;
+   
     padding-left: 30px;
-    height: 200px;
     animation-duration: 2s;
     animation-name: slidein;
     
@@ -45,9 +44,7 @@ td {
     font-size: 12px;
     
 }
-#table{
-    float: left;
-}
+
 
 .färgmörk{
     margin: 0;
@@ -91,7 +88,6 @@ li{
    display: inline-block;
 }
 
-<<<<<<< HEAD
 @keyframes slidein {
     from {
       margin-left: 100%;
@@ -110,8 +106,7 @@ li{
   
   .zoom:hover {
     transform: scale(1.5);
-    background-color:grey
-    
+    background-color: grey
     
   }
 
@@ -120,13 +115,6 @@ li{
 
   }
 
- 
-
-
-
-
-
-=======
 #dice li:hover{
     background: cadetblue;
 
@@ -143,6 +131,5 @@ li{
 #roll:hover{
     border: 2px dotted black;
     background-color: rosybrown;
->>>>>>> 4c81f63b1c808bac87f20930aa633752c3fbdde2
 
 }
