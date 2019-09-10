@@ -8,7 +8,7 @@
 <body> 
     <h1 class="focus">YATZY</h1>
 
-    <table  border = "1">
+    <table width = "200px;" border = "1">
         
         <tr>
             
@@ -29,24 +29,17 @@
 
         </tr>
         <tr>
-            <td>Tvåor </td> 
+            <td>Tvåor </td>
             <td><input type="number"></td>
             <td><input type="number"></td>
             <td><input type="number" ></td>
             <td><input type="number" ></td>
 
+
         </tr>
 
         <tr>
-            <td >Treor </td> 
-            <td><input type="number" ></td>
-            <td><input type="number" ></td>
-            <td><input type="number" ></td>
-            <td><input type="number" ></td>
-
-        </tr>
-        <tr>
-            <td>Fyror</td> 
+            <td >Treor </td>
             <td><input type="number" ></td>
             <td><input type="number" ></td>
             <td><input type="number" ></td>
@@ -54,7 +47,7 @@
 
         </tr>
         <tr>
-            <td>Femmor </td> 
+            <td>Fyror</td>
             <td><input type="number" ></td>
             <td><input type="number" ></td>
             <td><input type="number" ></td>
@@ -62,7 +55,15 @@
 
         </tr>
         <tr>
-            <td>Sexor</td> 
+            <td>Femmor </td>
+            <td><input type="number" ></td>
+            <td><input type="number" ></td>
+            <td><input type="number" ></td>
+            <td><input type="number" ></td>
+
+        </tr>
+        <tr>
+            <td>Sexor</td>
             <td><input type="number" ></td>
             <td><input type="number" ></td>
             <td><input type="number" ></td>
@@ -88,7 +89,7 @@
         </tr>
 
         <tr>
-            <td>Par</td> 
+            <td>Par</td>
             <td><input type= "number" ></td>
             <td><input type= "number" ></td>
             <td><input type= "number" ></td>
@@ -96,7 +97,7 @@
 
         </tr>
         <tr>
-            <td>Två par</td> 
+            <td>Två par</td>
             <td><input type= "number" ></td>
             <td><input type= "number" ></td>
             <td><input type= "number" ></td>
@@ -104,7 +105,7 @@
 
         </tr>
         <tr>
-            <td>Tretal</td> 
+            <td>Tretal</td>
             <td><input type= "number" ></td>
             <td><input type= "number" ></td>
             <td><input type= "number" ></td>
@@ -112,7 +113,7 @@
 
         </tr>
         <tr>
-            <td>Fyrtal</td> 
+            <td>Fyrtal</td>
             <td><input type= "number" ></td>
             <td><input type= "number" ></td>
             <td><input type= "number" ></td>
@@ -120,32 +121,7 @@
 
         </tr>
         <tr>
-            <td>Liten stege</td> 
-            <td><input type= "number" ></td>
-            <td><input type= "number" ></td>
-            <td><input type= "number" ></td>
-            <td><input type= "number" ></td>
-
-        </tr>
-
-        <tr>
-            <td>Stor stege</td> 
-            <td><input type= "number" ></td>
-            <td><input type= "number" ></td>
-            <td><input type= "number" ></td>
-            <td><input type= "number" ></td>
-
-        </tr>
-        <tr>
-            <td>Kåk</td> 
-            <td><input type= "number" ></td>
-            <td><input type= "number" ></td>
-            <td><input type= "number" ></td>
-            <td><input type= "number" ></td>
-
-        </tr>
-        <tr>
-            <td>Chans</td> 
+            <td>Liten stege</td>
             <td><input type= "number" ></td>
             <td><input type= "number" ></td>
             <td><input type= "number" ></td>
@@ -154,11 +130,36 @@
         </tr>
 
         <tr>
-            <td>Yatzy</td> 
+            <td>Stor stege</td>
             <td><input type= "number" ></td>
             <td><input type= "number" ></td>
             <td><input type= "number" ></td>
             <td><input type= "number" ></td>
+
+        </tr>
+        <tr>
+            <td>Kåk</td>
+            <td><input type= "number" ></td>
+            <td><input type= "number" ></td>
+            <td><input type= "number" ></td>
+            <td><input type= "number" ></td>
+
+        </tr>
+        <tr>
+            <td>Chans</td>
+            <td><input type= "number" ></td>
+            <td><input type= "number" ></td>
+            <td><input type= "number" ></td>
+            <td><input type= "number" ></td>
+
+        </tr>
+
+        <tr>
+            <td>Yatzy</td>
+            <td><input type=""text></td>
+            <td><input type=""text></td>
+            <td><input type=""text></td>
+            <td><input type=""text></td>
 
         </tr>
         <tr>
@@ -169,46 +170,11 @@
             <td><input class="grå"type= "text" ></td>
 
         </tr>
+
+
+
+
+
     </table>
-    </div>
-    <!--end of table div-->
-    <div id="gameSpace">
-            <ul class="inputName">
-                <li>
-                    <label for="name" class="title">Player 1 name: </label>
-                    <input type="input" name="name" onkeyup="getName('name1')" />
-                </li>
-                <li>
-                    <label for="name" class="title">Player 2 name: </label>
-                    <input type="input" name="name" onkeyup="getName('name2')" />
-                </li>
-                <li>
-                    <label for="name" class="title">Player 3 name: </label>
-                    <input type="input" name="name" onkeyup="getName('name3')" />
-                </li>
-                <li>
-                    <label for="name" class="title">Player 4 name: </label>
-                    <input type="input" name="name" onkeyup="getName('name4')" />
-                </li>
-            </ul><br><br><br>
-            <div id="dice">
-                <ul>
-                    <li id="dice1">Dice 1</li>
-                    <li id="dice2">Dice 2</li>
-                    <li id="dice3">Dice 3</li>
-                </ul><br><br>
-                <ul>
-                    <li id="dice4">Dice 4</li>
-                    <li id="dice5">Dice 5</li>
-                </ul>
-                <div><br><br><br>
-                    <p id="roll" onclick="rollDice()">Roll</p>
-    
-                </div>
-            </div>
-            <!--end of dice div-->
-        </div>
-        <!--end of game space div-->
-        
 </body>
 </html>

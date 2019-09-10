@@ -1,33 +1,46 @@
-body{
-    margin: 0;
-    padding: 0;
-   
-    padding-left: 30px;
-    animation-duration: 2s;
-    animation-name: slidein;
-    
-
-}
 
 h1{
-    font-family: arial, sans-serif;
-    animation-duration: 4s;
-    animation-name: slidein;
     
+    animation-name: slidein;
+    animation-duration: 2s;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
 }
 
+@keyframes slidein{
+from{
+color:red;
+font-size: 32px;
+widows: 10%;
+margin-left: 0%;
+margin-top:0%;
+}
 
+to{
+    color:blue;
+    font-size: 20px;
+    transform: rotate(180deg);
+    width:50%;
+    margin-left:30%;
+    margin-top:20%;
+}
+}
 
-table, td, tr {
+table,tr,td {
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    border: 2px solid black;
+    border:1px solid black;
+    text-align: left;
 
+}
+
+table{
+      border: 2px solid black;
 }
 
 input {
-    width: 60px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     border: none;
     margin: 0;
     height: 100%;
@@ -37,99 +50,18 @@ input {
 }
 
 td {
-    font-family: 'Roboto', sans-serif;
-    background-color: white;
-    margin: 0;
-    padding: 0;
-    font-size: 12px;
-    
+    width:100px;
+
 }
 
 
 .färgmörk{
-    margin: 0;
+    width: 150px;
     background-color: darkgrey;
+
 }
 
 .grå{
     background-color: lightgrey;
     margin: 0;
-}
-li{
-    display: inline;
-    list-style-type: none;
-    padding: 15px;
-   
-}
-
-#table{
-    float: left;
-}
-
-#gameSpace{
-    float: right;
-    background-color: aliceblue;
-    
-}
-
-#dice { 
-    text-align: center;
-    font-weight: bold;
-    
-   
-}
-
-#dice li{
-   background-color: blanchedalmond;
-   margin: 5px;
-   border-radius: 10px;
-   box-shadow: 5px 5px 10px grey;
-   width: 50px;
-   display: inline-block;
-}
-
-@keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 200%; 
-
-    }
-  
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-  }
-
-
- 
-  
-  .zoom:hover {
-    transform: scale(1.5);
-    background-color: grey
-    
-  }
-
-  .focus {
-    transform: scale(1.0);
-
-  }
-
-#dice li:hover{
-    background: cadetblue;
-
-}
-#roll{
-    width: 100px;
-    height: 50px;
-    background-color: peru;
-    box-shadow: 5px 5px 10px grey;
-    display: inline-block;
-    line-height: 3;
-    vertical-align: middle;
-}
-#roll:hover{
-    border: 2px dotted black;
-    background-color: rosybrown;
-
 }
