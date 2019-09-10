@@ -1,46 +1,34 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    padding-left: 30px;
+    height: 200px;
+    animation-duration: 2s;
+    animation-name: slidein;
+    
+
+}
 
 h1{
-    
+    font-family: arial, sans-serif;
+    animation-duration: 4s;
     animation-name: slidein;
-    animation-duration: 2s;
-    animation-iteration-count: 3;
-    animation-direction: alternate;
+    
 }
 
-@keyframes slidein{
-from{
-color:red;
-font-size: 32px;
-widows: 10%;
-margin-left: 0%;
-margin-top:0%;
-}
 
-to{
-    color:blue;
-    font-size: 20px;
-    transform: rotate(180deg);
-    width:50%;
-    margin-left:30%;
-    margin-top:20%;
-}
-}
 
-table,tr,td {
+table, td, tr {
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    border:1px solid black;
-    text-align: left;
+    border: 2px solid black;
 
-}
-
-table{
-      border: 2px solid black;
 }
 
 input {
-    width: 30px;
-    height: 30px;
+    width: 60px;
+    height: 50px;
     border: none;
     margin: 0;
     height: 100%;
@@ -50,18 +38,83 @@ input {
 }
 
 td {
-    width:100px;
-
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    
+}
+#table{
+    float: left;
 }
 
-
 .färgmörk{
-    width: 150px;
+    margin: 0;
     background-color: darkgrey;
-
 }
 
 .grå{
     background-color: lightgrey;
     margin: 0;
 }
+li{
+    display: inline;
+    list-style-type: none;
+    padding: 15px;
+   
+}
+
+#table{
+    float: left;
+}
+
+#gameSpace{
+    float: right;
+    background-color: aliceblue;
+    
+}
+
+#dice { 
+    text-align: center;
+    font-weight: bold;
+    
+   
+}
+
+#dice li{
+   background-color: blanchedalmond;
+   margin: 5px;
+   border-radius: 10px;
+   box-shadow: 5px 5px 10px grey;
+   width: 50px;
+   display: inline-block;
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 200%; 
+
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+}
+
+
+ 
+ 
+  .zoom:hover {
+    transform: scale(1.5);
+    background-color:grey
+  }
+
+  .focus {
+    transform: scale(1.0);
+
+  }
+
+ 
