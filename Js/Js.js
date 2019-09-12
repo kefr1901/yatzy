@@ -1,5 +1,5 @@
 
-function getName(name) {
+/*function getName(name) {
     var inputname = event.target.value;
     //var inputname=document.getElementById("name").value; 
     console.log(inputname);
@@ -23,6 +23,8 @@ function rollDice() {
 
 }
 
+*/
+
 
 let countbutton = document.getElementById("count");
 countbutton.addEventListener("click", function(e){
@@ -38,3 +40,5 @@ function count(){
     numberArr.push(Number(document.getElementById("player1_sixes").value));
     console.log(numberArr);
 }
+
+
