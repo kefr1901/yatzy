@@ -40,3 +40,5 @@ function count(){
     numberArr.push(document.getElementById("player1_sixes").value);
     console.log(numberArr);
 }
+
+
