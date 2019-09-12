@@ -30,11 +30,11 @@ count();
 });
 function count(){
     let numberArr = [];
-    numberArr.push(document.getElementById("player1_ones").value);
-    numberArr.push(document.getElementById("player1_twos").value);
-    numberArr.push(document.getElementById("player1_trees").value);
-    numberArr.push(document.getElementById("player1_fours").value);
-    numberArr.push(document.getElementById("player1_fives").value);
-    numberArr.push(document.getElementById("player1_sixes").value);
+    numberArr.push(Number(document.getElementById("player1_ones").value));
+    numberArr.push(Number(document.getElementById("player1_twos").value));
+    numberArr.push(Number(document.getElementById("player1_threes").value));
+    numberArr.push(Number(document.getElementById("player1_fours").value));
+    numberArr.push(Number(document.getElementById("player1_fives").value));
+    numberArr.push(Number(document.getElementById("player1_sixes").value));
     console.log(numberArr);
 }
