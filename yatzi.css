@@ -1,11 +1,20 @@
 body{
-    margin-left:  50px;
-    margin-top:  20px;
-    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    padding-left: 30px;
+    height: 200px;
+    animation-duration: 2s;
+    animation-name: slidein;
+    
+
 }
 
 h1{
     font-family: arial, sans-serif;
+    animation-duration: 4s;
+    animation-name: slidein;
+    
 }
 
 
@@ -40,12 +49,12 @@ td {
     float: left;
 }
 
-.färgmörk{
+.darkgrey{
     margin: 0;
     background-color: darkgrey;
 }
 
-.grå{
+.grey{
     background-color: lightgrey;
     margin: 0;
 }
@@ -82,21 +91,30 @@ li{
    display: inline-block;
 }
 
-#dice li:hover{
-    background: cadetblue;
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 200%; 
 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
 }
-#roll{
-    width: 100px;
-    height: 50px;
-    background-color: peru;
-    box-shadow: 5px 5px 10px grey;
-    display: inline-block;
-    line-height: 3;
-    vertical-align: middle;
-}
-#roll:hover{
-    border: 2px dotted black;
-    background-color: rosybrown;
 
-}
+
+ 
+ 
+  .zoom:hover {
+    transform: scale(1.5);
+    background-color:grey
+  }
+
+  .focus {
+    transform: scale(1.0);
+
+  }
+
+ 
