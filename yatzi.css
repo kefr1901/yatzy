@@ -49,12 +49,12 @@ td {
     float: left;
 }
 
-.färgmörk{
+.darkgrey{
     margin: 0;
     background-color: darkgrey;
 }
 
-.grå{
+.grey{
     background-color: lightgrey;
     margin: 0;
 }
