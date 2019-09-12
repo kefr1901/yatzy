@@ -22,3 +22,19 @@ function rollDice() {
     document.getElementById("dice5").innerHTML = newDice5;
 
 }
+
+
+let countbutton = document.getElementById("count");
+countbutton.addEventListener("click", function(e){
+count();
+});
+function count(){
+    let numberArr = [];
+    numberArr.push(document.getElementById("player1_ones").value);
+    numberArr.push(document.getElementById("player1_twos").value);
+    numberArr.push(document.getElementById("player1_trees").value);
+    numberArr.push(document.getElementById("player1_fours").value);
+    numberArr.push(document.getElementById("player1_fives").value);
+    numberArr.push(document.getElementById("player1_sixes").value);
+    console.log(numberArr);
+}
