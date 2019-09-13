@@ -6,26 +6,17 @@ body{
     height: 200px;
     animation-duration: 2s;
     animation-name: slidein;
-    
-
 }
-
 h1{
     font-family: arial, sans-serif;
     animation-duration: 2s;
-    animation-name: slidein;
-    
+    animation-name: slidein;   
 }
-
-
-
 table, td, tr {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     border: 2px solid black;
-
 }
-
 input {
     width: 60px;
     height: 50px;
@@ -33,27 +24,21 @@ input {
     margin: 0;
     height: 100%;
     text-align: center;
-
-
 }
-
 td {
     font-family: 'Roboto', sans-serif;
     background-color: white;
     margin: 0;
     padding: 0;
-    font-size: 12px;
-    
+    font-size: 12px;   
 }
 #table{
     float: left;
 }
-
 .darkgrey{
     margin: 0;
     background-color: darkgrey;
 }
-
 .grey{
     background-color: lightgrey;
     margin: 0;
@@ -61,27 +46,22 @@ td {
 li{
     display: inline;
     list-style-type: none;
-    padding: 15px;
-   
+    padding: 15px; 
 }
-
 #table{
     float: left;
 }
-
 #gameSpace{
     float: right;
     background-color: aliceblue;
     
 }
-
 #dice { 
     text-align: center;
     font-weight: bold;
     
    
 }
-
 #dice li{
    background-color: blanchedalmond;
    margin: 5px;
@@ -103,18 +83,23 @@ li{
       width: 100%;
     }
 }
-
-
- 
- 
-  .zoom:hover {
+.zoom:hover {
     transform: scale(1.5);
     background-color:grey
-  }
-
-  .focus {
+}
+.focus {
     transform: scale(1.0);
-
-  }
+}
+button {
+    background-color: rgb(90, 95, 91); /* Green */
+    border: none;
+    color: white;
+    padding: 10px, 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: 2px solid black;
+}
 
 
