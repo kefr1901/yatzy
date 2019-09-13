@@ -50,15 +50,17 @@ function count(){
 
     if (summa >= 63){
         document.getElementById("player1_bonus").value = 50;
+        document.getElementById("player2_bonus").value = 50;
+        document.getElementById("player3_bonus").value = 50;
+        document.getElementById("player4_bonus").value = 50;
+
     }
     
     document.getElementById("player1_summa").value = summa;
+    document.getElementById("player2_summa").value = summa;
+    document.getElementById("player3_summa").value = summa;
+    document.getElementById("player4_summa").value = summa;
     
-
-    
-
-   
-
     }
 
     
