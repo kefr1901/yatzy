@@ -20,11 +20,7 @@ function rollDice() {
     document.getElementById("Dice4").innerHTML = newDice4;
     let newDice5 = dice[Math.floor(Math.random() * dice.length)];
     document.getElementById("Dice5").innerHTML = newDice5;
-
 }
-
-
-
 
 let countbutton = document.getElementById("count");
 countbutton.addEventListener("click", function(e){
@@ -41,26 +37,16 @@ function count(){
     console.log(numberArr);
 
 
-    
     let summa = 0;
+
     for(let i=0; i <numberArr.length; i++){
         summa += numberArr[i]
-
     }
 
     if (summa >= 63){
-        document.getElementById("player1_bonus").value = 50;
-        document.getElementById("player2_bonus").value = 50;
-        document.getElementById("player3_bonus").value = 50;
-        document.getElementById("player4_bonus").value = 50;
-
+        document.getElementById("player1_bonus").value = 50; 
     }
-    
     document.getElementById("player1_summa").value = summa;
-    document.getElementById("player2_summa").value = summa;
-    document.getElementById("player3_summa").value = summa;
-    document.getElementById("player4_summa").value = summa;
-    
     }
 
     
