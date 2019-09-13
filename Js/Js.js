@@ -39,6 +39,31 @@ function count(){
     numberArr.push(Number(document.getElementById("player1_fives").value));
     numberArr.push(Number(document.getElementById("player1_sixes").value));
     console.log(numberArr);
-}
+
+
+    
+    let summa = 0;
+    for(let i=0; i <numberArr.length; i++){
+        summa += numberArr[i]
+
+    }
+
+    if (summa >= 63){
+        document.getElementById("player1_bonus").value = 50;
+    }
+    
+    document.getElementById("player1_summa").value = summa;
+    
+
+    
+
+   
+
+    }
+
+    
+
+    
+
 
 
