@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-   <link rel="stylesheet" href="yatzi.css">
+    <link rel="stylesheet" href="yatzi.css">
 
 </head>
 
-<body> 
+<body>
+    <div>
     <h1 class="focus">YATZY</h1>
 
-    <table width = "200px;" border = "1">
-        
+    <table width="200px;" border="1">
+
         <tr>
-            
-            <td colspan = "1" class="darkgrey zoom">Spelare/Players</td> 
-            <td><input class="grey zoom" type=""text></td>
-            <td><input class="grey zoom" type=""text></td>
-            <td><input class="grey zoom" type=""text></td>
-            <td><input class="grey zoom" type=""text></td>
-       
+
+            <td colspan="1" class="darkgrey zoom">Spelare/Players</td>
+            <td><input class="grey zoom" type="" text></td>
+            <td><input class="grey zoom" type="" text></td>
+            <td><input class="grey zoom" type="" text></td>
+            <td><input class="grey zoom" type="" text></td>
+
         </tr>
-   
+
         <tr>
-            <td  >Ettor </td> 
+            <td>Ettor </td>
             <td><input id="player1_ones" type="number"></td>
             <td><input type="number"></td>
             <td><input type="number"></td>
@@ -32,34 +34,34 @@
             <td>Tvåor </td>
             <td><input id="player1_twos" type="number"></td>
             <td><input type="number"></td>
-            <td><input type="number" ></td>
-            <td><input type="number" ></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
 
 
         </tr>
 
         <tr>
-            <td >Treor </td>
-            <td><input id="player1_threes" type="number" ></td>
-            <td><input type="number" ></td>
-            <td><input type="number" ></td>
-            <td><input type="number" ></td>
+            <td>Treor </td>
+            <td><input id="player1_threes" type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
 
         </tr>
         <tr>
             <td>Fyror</td>
-            <td><input id="player1_fours" type="number" ></td>
-            <td><input type="number" ></td>
-            <td><input type="number" ></td>
-            <td><input type="number" ></td>
+            <td><input id="player1_fours" type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
 
         </tr>
         <tr>
             <td>Femmor </td>
-            <td><input id="player1_fives" type="number" ></td>
-            <td><input type="number" ></td>
-            <td><input type="number" ></td>
-            <td><input type="number" ></td>
+            <td><input id="player1_fives" type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
 
         </tr>
         <tr>
@@ -177,10 +179,20 @@
 
     <br>
     <button id="count">count</button>
-    <script src="./Js/Js.js"></script>
+
     <br>
     <br>
 
-    
+    <button onclick="rollDice()">Tryck för att slå tärningarna</button>
+    <br>
+    <br>
+    <button id="Dice1">1</button>
+    <button id="Dice2">2</button>
+    <button id="Dice3">3</button>
+    <button id="Dice4">4</button>
+    <button id="Dice5">5</button>
+
+    <script src="/Js/Js.js"></script>
 </body>
+
 </html>
