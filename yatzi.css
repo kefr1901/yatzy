@@ -1,9 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    width: 200px;
     padding-left: 30px;
-    height: 200px;
     animation-duration: 2s;
     animation-name: slidein;
 }
@@ -12,6 +10,27 @@ h1{
     animation-duration: 2s;
     animation-name: slidein;   
 }
+.navbar {
+    background: rgb(231, 231, 229);
+    margin-bottom: 10px;
+  }
+  .nav-link,
+  .navbar-brand {
+    color:black;
+    cursor: pointer;
+    font-size: 2em;
+  }
+ 
+  
+  .nav-link:hover {
+    color: #000;
+  }
+  .navbar-collapse {
+    justify-content: flex-end;
+  }
+  .nav-link{
+      font-size: 1em;
+  }
 table, td, tr {
     font-family: arial, sans-serif;
     border-collapse: collapse;
@@ -51,11 +70,6 @@ li{
 #table{
     float: left;
 }
-#gameSpace{
-    float: right;
-    background-color: aliceblue;
-    
-}
 #dice { 
     text-align: center;
     font-weight: bold;
@@ -91,15 +105,24 @@ li{
     transform: scale(1.0);
 }
 button {
-    background-color: rgb(90, 95, 91); /* Green */
-    border: none;
-    color: white;
-    padding: 10px, 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border: 2px solid black;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
-
+#tableArea{
+    float: left;
+    position: relative;
+}
+#diceArea{
+    float: right;
+    position: relative;
+    margin: 150px;
+}
+#diceButton button{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+#clickDiceButton{
+    margin-left: 40px;
+}
 

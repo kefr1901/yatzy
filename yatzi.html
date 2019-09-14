@@ -2,67 +2,83 @@
 <html lang="en">
 
 <head>
+    <!--  Bootstrap  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="yatzi.css">
-
 </head>
 
 <body>
-    <h1 class="focus">YATZY</h1>
+    <nav class="navbar navbar-expand-md">
+        <a class="navbar-brand">Yatzy</a>
+        <div class="collapse navbar-collapse" id="main-navigation">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" id="rule" href="#">Rules</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="score" href="#">Scoring</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="tableArea">
+        <button type="button" class="btn btn-secondary" id="count">Count</button>
 
-    <table width="200px;" border="1">
+        <table width="200px;" border="1">
 
-        <tr>
-            <td colspan="1" class="darkgrey zoom">Spelare/Players</td>
-            <td><input class="grey zoom" type="" text></td>
-            <td><input class="grey zoom" type="" text></td>
-            <td><input class="grey zoom" type="" text></td>
-            <td><input class="grey zoom" type="" text></td>
-        </tr>
+            <tr>
+                <td colspan="1" class="darkgrey zoom">Spelare/Players</td>
+                <td><input class="grey zoom" type="" text></td>
+                <td><input class="grey zoom" type="" text></td>
+                <td><input class="grey zoom" type="" text></td>
+                <td><input class="grey zoom" type="" text></td>
+            </tr>
 
-        <tr>
-            <td>Ettor </td>
-            <td><input id="player1_ones" type="number"></td>
-            <td><input id="player2_ones" type="number"></td>
-            <td><input id="player3_ones" type="number"></td>
-            <td><input id="player4_ones" type="number"></td>
-        </tr>
-        <tr>
-            <td>Tvåor </td>
-            <td><input id="player1_twos" type="number" step="2"></td>
-            <td><input id="player2_twos" type="number" step="2"></td>
-            <td><input id="player3_twos" type="number" step="2"></td>
-            <td><input id="player4_twos" type="number" step="2"></td>
-        </tr>
+            <tr>
+                <td>Ettor </td>
+                <td><input id="player1_ones" type="number"></td>
+                <td><input id="player2_ones" type="number"></td>
+                <td><input id="player3_ones" type="number"></td>
+                <td><input id="player4_ones" type="number"></td>
+            </tr>
+            <tr>
+                <td>Tvåor </td>
+                <td><input id="player1_twos" type="number" step="2"></td>
+                <td><input id="player2_twos" type="number" step="2"></td>
+                <td><input id="player3_twos" type="number" step="2"></td>
+                <td><input id="player4_twos" type="number" step="2"></td>
+            </tr>
 
-        <tr>
-            <td>Treor </td>
-            <td><input id="player1_threes" type="number" step="3"></td>
-            <td><input id="player2_threes" type="number" step="3"></td>
-            <td><input id="player3_threes" type="number" step="3"></td>
-            <td><input id="player4_threes" type="number" step="3"></td>
-        </tr>
-        <tr>
-            <td>Fyror</td>
-            <td><input id="player1_fours" type="number" step="4"></td>
-            <td><input id="player2_fours" type="number" step="4"></td>
-            <td><input id="player3_fours" type="number" step="4"></td>
-            <td><input id="player4_fours" type="number" step="4"></td>
+            <tr>
+                <td>Treor </td>
+                <td><input id="player1_threes" type="number" step="3"></td>
+                <td><input id="player2_threes" type="number" step="3"></td>
+                <td><input id="player3_threes" type="number" step="3"></td>
+                <td><input id="player4_threes" type="number" step="3"></td>
+            </tr>
+            <tr>
+                <td>Fyror</td>
+                <td><input id="player1_fours" type="number" step="4"></td>
+                <td><input id="player2_fours" type="number" step="4"></td>
+                <td><input id="player3_fours" type="number" step="4"></td>
+                <td><input id="player4_fours" type="number" step="4"></td>
 
-        </tr>
-        <tr>
-            <td>Femmor </td>
-            <td><input id="player1_fives" type="number" step="5"></td>
-            <td><input id="player2_fives" type="number" step="5"></td>
-            <td><input id="player3_fives" type="number" step="5"></td>
-            <td><input id="player4_fives" type="number" step="5"></td>
+            </tr>
+            <tr>
+                <td>Femmor </td>
+                <td><input id="player1_fives" type="number" step="5"></td>
+                <td><input id="player2_fives" type="number" step="5"></td>
+                <td><input id="player3_fives" type="number" step="5"></td>
+                <td><input id="player4_fives" type="number" step="5"></td>
 
-        </tr>
-        <tr>
-            <td>Sexor</td>
-            <td><input id="player1_sixes" type="number" step="6"></td>
-            <td><input id="player2_sixes" type="number" step="6"></td>
-            <td><input id="player3_sixes" type="number" step="6"></td>
-            <td><input id="player4_sixes" type="number" step="6"></td>
+            </tr>
+            <tr>
+                <td>Sexor</td>
+                <td><input id="player1_sixes" type="number" step="6"></td>
+                <td><input id="player2_sixes" type="number" step="6"></td>
+                <td><input id="player3_sixes" type="number" step="6"></td>
+                <td><input id="player4_sixes" type="number" step="6"></td>
             <tr>
                 <td class="darkgrey zoom">Summa</td>
                 <td><input id="player1_summa" class="grey" type="number"></td>
@@ -162,24 +178,25 @@
 
             <br>
 
-    </table>
-
-    <br>
-    <button id="count">Count</button>
-
-    <br>
-    <br>
-
-    <button onclick="rollDice()">Tryck för att slå tärningarna</button>
-    <br>
-    <br>
-    <button id="Dice1">1</button>
-    <button id="Dice2">2</button>
-    <button id="Dice3">3</button>
-    <button id="Dice4">4</button>
-    <button id="Dice5">5</button>
-
+        </table>
+    </div>
+    <!-- end of table div -->
+    <div id="diceArea">
+        <button type="button" class="btn btn-dark" id="clickDiceButton">Tryck för att slå
+            tärningarna</button>
+        <br>
+        <br>
+        <div id="diceButton" class="dice">
+            <button type="button" class="btn btn-primary" id="Dice1">1</button>
+            <button type="button" class="btn btn-primary" id="Dice2">2</button>
+            <button type="button" class="btn btn-primary" id="Dice3">3</button>
+            <button type="button" class="btn btn-primary" id="Dice4">4</button>
+            <button type="button" class="btn btn-primary" id="Dice5">5</button>
+        </div>
+    </div>
+    <!-- end of dice div -->
     <script src="/Js/Js.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> <!-- popup framework in js -->
 </body>
 
 </html>
