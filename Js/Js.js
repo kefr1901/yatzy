@@ -8,7 +8,7 @@ function getName(name) {
 }
 
 function rollDice() {
-
+    let dice = [1, 2, 3, 4, 5, 6];
     if(!(document.getElementById("svar1").checked)){
         let newDice1 = dice[Math.floor(Math.random() * dice.length)];
         document.getElementById("Dice1").innerHTML = newDice1;
