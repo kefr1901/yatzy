@@ -36,27 +36,26 @@ countbutton.addEventListener("click", function(e){
 count();
 });
 function count(){
-    let numberArr = [];
-    numberArr.push(Number(document.getElementById("player1_ones").value));
-    numberArr.push(Number(document.getElementById("player1_twos").value));
-    numberArr.push(Number(document.getElementById("player1_threes").value));
-    numberArr.push(Number(document.getElementById("player1_fours").value));
-    numberArr.push(Number(document.getElementById("player1_fives").value));
-    numberArr.push(Number(document.getElementById("player1_sixes").value));
-    console.log(numberArr);
 
-
-    let summa = 0;
-
-    for(let i=0; i <numberArr.length; i++){
-        summa += numberArr[i]
+    for(let player = 1; player <= 4 ; player++){
+        let tempsum = document.getElementsByClassName("sum"+player+" player" + player);
+        console.log(tempsum);
+    
+        tempsum=Array.from(tempsum);
+    
+        let sum = tempsum.reduce((acc, Element )=> {
+        return acc+Number(Element.value); 
+        },0);
+        console.log(sum);
+    
+    
+        if (sum >= 63){
+            document.getElementById("player"+player+"_bonus").value = 50; 
+        }
+        document.getElementById("player"+player+"_summa").value = sum;
+        }
     }
 
-    if (summa >= 63){
-        document.getElementById("player1_bonus").value = 50; 
-    }
-    document.getElementById("player1_summa").value = summa;
-    }
 
     
 
