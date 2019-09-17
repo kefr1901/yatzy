@@ -9,17 +9,26 @@ function getName(name) {
 
 function rollDice() {
 
-    let dice = [1, 2, 3, 4, 5, 6];
-    let newDice1 = dice[Math.floor(Math.random() * dice.length)];
-    document.getElementById("Dice1").innerHTML = newDice1;
-    let newDice2 = dice[Math.floor(Math.random() * dice.length)];
-    document.getElementById("Dice2").innerHTML = newDice2;
-    let newDice3 = dice[Math.floor(Math.random() * dice.length)];
+    if(!(document.getElementById("svar1").checked)){
+        let newDice1 = dice[Math.floor(Math.random() * dice.length)];
+        document.getElementById("Dice1").innerHTML = newDice1;
+    }
+    if(!(document.getElementById("svar2").checked)){
+        let newDice2 = dice[Math.floor(Math.random() * dice.length)];
+        document.getElementById("Dice2").innerHTML = newDice2;
+    }
+    if(!(document.getElementById("svar3").checked)){
+        let newDice3 = dice[Math.floor(Math.random() * dice.length)];
     document.getElementById("Dice3").innerHTML = newDice3;
+    }
+    if(!(document.getElementById("svar4").checked)){
     let newDice4 = dice[Math.floor(Math.random() * dice.length)];
     document.getElementById("Dice4").innerHTML = newDice4;
+    }
+    if(!(document.getElementById("svar5").checked)){
     let newDice5 = dice[Math.floor(Math.random() * dice.length)];
     document.getElementById("Dice5").innerHTML = newDice5;
+    }
 }
 
 let countbutton = document.getElementById("count");
