@@ -55,9 +55,25 @@ function count(){
         document.getElementById("player"+player+"_summa").value = sum;
         }
     }
+document.getElementById("btnChangePlayer").addEventListener("click", function(e) {
+	let index = document.getElementById("player_turn").valueAsNumber + 1;
 
+	if (index > 4) {
+  	index = 1;
+  }
+  
+  let list = document.getElementsByClassName("active");
+  for (let element of list) {
+  	element.classList.remove("active");
+  }
 
+  document.getElementById("player_turn").value = index;
+  document.getElementById("player" + index).classList.add("active");
+});
+
+function checkHouse(){
     
+}
 
     
 

@@ -112,4 +112,10 @@ button {
     font-size: 16px;
     width: 29px;
 }
+.player{
+    background-color: blue;
+}
+.active{
+    background-color: yellow;
+}
 
